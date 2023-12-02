@@ -1,0 +1,120 @@
+@media all { 
+  /*Configurações gerais*/
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    height: 100vh;
+    background-image: url(./img/img1.jpg);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  } 
+
+  /*parte branca*/
+
+  div.geral {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.877);
+    color: black;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*Configurações da parte central*/
+
+  .bemvindo {
+    margin-top: 10px;
+  }
+
+  .geral>main>h1 {
+    font-size: 17px;
+    margin: 20px ;
+  }
+
+  .geral>main>p {
+    padding: 10px;
+  }
+
+  .p1 {
+    margin-top: 10px;
+  }
+
+  #n1, #n2 {
+  /*Onde digitamos o valor de entrada*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: yellow;
+    border: 1px solid grey;
+    color: black;
+    text-align: center;
+    width: 15vw;
+    height: 30px;
+    max-width: 150px;
+  }
+
+  .gerar, .reset {
+    margin-top: 5px;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    border: 1px solid grey;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+  }
+
+  .resultado {
+   /*Aqui aparece o resultado das multiplicações*/
+    background-color: yellow;
+    width: 25vw;
+    max-width: 150px;
+    height: 20px;
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+
+  /*footer*/
+
+  footer {
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0%;
+  }
+
+  footer>p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+  }
+
+  footer>p>a {
+    text-decoration: none;
+    color: rgb(8, 85, 228);
+  }
+
+  footer>p>a:hover {
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+  }
+
+  abbr {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Multiplicação</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./img/principal.png" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="geral">
+    <main>
+      <h1 class="bemvindo"><strong>Bem vindo!</strong></h1>
+      <h1>
+        Neste site vamos te ajudar a descobrir o resultado de QUALQUER MULTIPLICAÇÃO!!
+      </h1>
+      <form>
+        <p>👇 Digite aqui embaixo os números 👇</p>
+        <input type="number" name="n1" id="n1"> X
+        <input type="number" name="n2" id="n2">
+        <br>
+        <input class="gerar" type="button" value="Multiplicar" onclick="multiplicar()">
+        <br>
+        <input class="reset" type="reset" value="Reset">
+        <p class="p1">Aqui está o resultado para você!</p>
+      </form>
+      <p class="resultado"></p>
+      <h1 class="obs1">*Lembre-se sempre de estudar*</h1>
+    </main>
+  </div>
+
+  <footer>
+    <p class="direitos">
+      Projeto desenvolvido por
+      <a href="https://www.linkedin.com/in/thyale-martins-dantas-5387a828a/" target="_blank"><abbr title="Desenvolvedora Front-End">Thyale MD</abbr>.</a>
+    </p>
+  </footer>
+
+
+  <script>
+    var nome = window.prompt ('Olá, qual o seu nome?')
+    var h1titulo = window.document.querySelector('h1.bemvindo')
+    h1titulo.innerHTML = `Bem vindo ${nome}`
+
+    function multiplicar(){
+      var tn1 = window.document.querySelector('input#n1')
+      var tn2 = window.document.querySelector('input#n2')
+      var n1 = Number(tn1.value)
+      var n2 = Number(tn2.value)
+      var multi = n1*n2
+      var res = window.document.querySelector('p.resultado')
+      res.innerHTML = `${multi}`
+    }
+
+  </script>
+
+</body>
+
+</html>
